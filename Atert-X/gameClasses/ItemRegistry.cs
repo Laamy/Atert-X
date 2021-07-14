@@ -66,7 +66,20 @@ namespace Atert_X.gameClasses
 
             if (upperID == "CORNILIA FLOWER SEED") return 199;
 
-            if (upperID == "CORNILIA FLOWER SEED") return 199;
+            if (upperID == "ANIMAL SCALE") return 206;
+            if (upperID == "GLASS BOTTLE") return 207;
+
+            if (upperID == "LUBRICANT OIL") return 209;
+
+            if (upperID == "BIOFUEL BOTTLE") return 211;
+
+            if (upperID == "PLASTEEL") return 213;
+
+            if (upperID == "ELETRONIC PARTS") return 215;
+
+            if (upperID == "COMPUTER MODULE") return 217;
+
+            if (upperID == "QUEEN BRIBEE CAPSULE") return 222;
 
             if (upperID == "BUGGED ITEM") return 10000;
 
