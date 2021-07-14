@@ -84,6 +84,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameClasses\Inventory.cs" />
+    <Compile Include="gameClasses\ItemRegistry.cs" />
+    <Compile Include="gameClasses\ItemStack.cs" />
     <Compile Include="Memory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
