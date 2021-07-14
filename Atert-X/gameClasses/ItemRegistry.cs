@@ -55,6 +55,13 @@ namespace Atert_X.gameClasses
             if (upperID == "BOT HEALING MODULE") return 166;
             if (upperID == "BOT SPEED MODULE") return 167;
 
+            if (upperID == "ANTORK CAPSULE") return 188;
+            if (upperID == "BRIBEE CAPSULE") return 189;
+            if (upperID == "JELLY CAPSULE") return 190;
+            if (upperID == "CARANCRAB CAPSULE") return 191;
+            if (upperID == "SCORTIXA CAPSULE") return 192;
+            if (upperID == "CAPTURE CAPSULE") return 193;
+
             if (upperID == "CORNILIA FLOWER") return 197;
 
             if (upperID == "CORNILIA FLOWER SEED") return 199;
