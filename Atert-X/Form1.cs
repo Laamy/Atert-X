@@ -42,7 +42,7 @@ namespace Atert_X
             var item = Inventory.getItemStackByHotbarID((int)slotID.Value); // Get item
             item.currentStackSize = (int)itemAmount.Value;
             item.itemID = ItemRegistry.getIDFromName(itemName.Text);
-            Text = item.itemAddr;
+            Text = item.slotAddr;
         }
     }
 }

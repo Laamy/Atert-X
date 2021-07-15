@@ -2,10 +2,10 @@
 {
     public class UniqueItem
     {
-        public string itemAddr;
+        public string slotAddr;
         public UniqueItem(string itemID)
         {
-            this.itemAddr = itemID;
+            this.slotAddr = itemID;
         }
 
         // -- : Item struct : --
@@ -27,20 +27,20 @@
 
         public int maxStackSize // 0
         {
-            get => Form1.mem.ReadInt($"{Form1.novaItemList},{itemAddr},38");
-            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{itemAddr},38", "int", value.ToString());
+            get => Form1.mem.ReadInt($"{Form1.novaItemList},{slotAddr},38");
+            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{slotAddr},38", "int", value.ToString());
         }
 
         public int currentStackSize // 4
         {
-            get => Form1.mem.ReadInt($"{Form1.novaItemList},{itemAddr},3C"); 
-            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{itemAddr},3C", "int", value.ToString());
+            get => Form1.mem.ReadInt($"{Form1.novaItemList},{slotAddr},3C"); 
+            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{slotAddr},3C", "int", value.ToString());
         }
 
         public int itemID // 8
         {
-            get => Form1.mem.ReadInt($"{Form1.novaItemList},{itemAddr},40");
-            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{itemAddr},40", "int", value.ToString());
+            get => Form1.mem.ReadInt($"{Form1.novaItemList},{slotAddr},40");
+            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{slotAddr},40", "int", value.ToString());
         }
     }
 }
