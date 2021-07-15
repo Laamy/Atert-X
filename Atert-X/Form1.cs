@@ -1,4 +1,5 @@
 ﻿using Atert_X.gameClasses;
+using Atert_X.gameClasses.CClasses;
 using System;
 using System.Threading;
 using System.Windows.Forms;
@@ -39,10 +40,15 @@ namespace Atert_X
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var item = Inventory.getItemStackByHotbarID((int)slotID.Value); // Get item
-            item.currentStackSize = (int)itemAmount.Value;
-            item.itemID = ItemRegistry.getIDFromName(itemName.Text);
-            Text = item.slotAddr;
+            var inv = NovaIsland.inventory;
+            int slot = (int)slotID.Value;
+            if (inv.getItemStackByHotbarID(slot).isNull == false)
+            {
+                var item = new CInventoryItem(itemName.Text); // Create new Client Item with presearched ItemRegistry ID
+                item.currentStackSize = (int)itemAmount.Value; // How many items we want
+
+                inv.addItem(item, slot); // Add item to our inventory
+            }
         }
     }
 }

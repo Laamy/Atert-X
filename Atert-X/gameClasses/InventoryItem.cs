@@ -1,4 +1,6 @@
-﻿namespace Atert_X.gameClasses
+﻿using Atert_X.gameClasses.CClasses;
+
+namespace Atert_X.gameClasses
 {
     public class InventoryItem
     {
@@ -6,6 +8,12 @@
         public InventoryItem(string itemID)
         {
             this.slotAddr = itemID;
+        }
+        public InventoryItem(CInventoryItem item)
+        {
+            maxStackSize = item.maxStackSize;
+            currentStackSize = item.currentStackSize;
+            itemID = item.itemID;
         }
 
         public bool isNull // SAFTY!

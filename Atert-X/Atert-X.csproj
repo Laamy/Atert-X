@@ -84,9 +84,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameClasses\CClasses\CInventoryItem.cs" />
     <Compile Include="gameClasses\Inventory.cs" />
     <Compile Include="gameClasses\ItemRegistry.cs" />
     <Compile Include="gameClasses\InventoryItem.cs" />
+    <Compile Include="gameClasses\NovaIsland.cs" />
     <Compile Include="Memory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

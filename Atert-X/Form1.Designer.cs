@@ -33,16 +33,16 @@ namespace Atert_X
             this.godmodeBox = new System.Windows.Forms.CheckBox();
             this.gameTicks = new System.Windows.Forms.Timer(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.slotID = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.itemName = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.itemAmount = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.itemName = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.slotID = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.slotID)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slotID)).BeginInit();
             this.SuspendLayout();
             // 
             // godmodeBox
@@ -78,42 +78,15 @@ namespace Atert_X
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Inventory Editor";
             // 
-            // slotID
+            // button1
             // 
-            this.slotID.Location = new System.Drawing.Point(6, 16);
-            this.slotID.Name = "slotID";
-            this.slotID.Size = new System.Drawing.Size(76, 20);
-            this.slotID.TabIndex = 0;
-            this.slotID.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "SlotID";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(87, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "ItemName";
-            // 
-            // itemName
-            // 
-            this.itemName.Location = new System.Drawing.Point(6, 38);
-            this.itemName.Name = "itemName";
-            this.itemName.Size = new System.Drawing.Size(75, 20);
-            this.itemName.TabIndex = 4;
+            this.button1.Location = new System.Drawing.Point(40, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Save";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -127,6 +100,11 @@ namespace Atert_X
             // itemAmount
             // 
             this.itemAmount.Location = new System.Drawing.Point(6, 60);
+            this.itemAmount.Maximum = new decimal(new int[] {
+            1998,
+            0,
+            0,
+            0});
             this.itemAmount.Name = "itemAmount";
             this.itemAmount.Size = new System.Drawing.Size(76, 20);
             this.itemAmount.TabIndex = 5;
@@ -136,15 +114,42 @@ namespace Atert_X
             0,
             0});
             // 
-            // button1
+            // itemName
             // 
-            this.button1.Location = new System.Drawing.Point(40, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(57, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.itemName.Location = new System.Drawing.Point(6, 38);
+            this.itemName.Name = "itemName";
+            this.itemName.Size = new System.Drawing.Size(75, 20);
+            this.itemName.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(87, 41);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ItemName";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(87, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 13);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "SlotID";
+            // 
+            // slotID
+            // 
+            this.slotID.Location = new System.Drawing.Point(6, 16);
+            this.slotID.Name = "slotID";
+            this.slotID.Size = new System.Drawing.Size(76, 20);
+            this.slotID.TabIndex = 0;
+            this.slotID.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
@@ -160,8 +165,8 @@ namespace Atert_X
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.slotID)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slotID)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

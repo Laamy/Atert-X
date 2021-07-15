@@ -8,7 +8,7 @@ namespace Atert_X.gameClasses
 {
     public class ItemRegistry
     {
-        public static int getIDFromName(string itemID)
+        public int getIDFromName(string itemID)
         {
             string upperID = itemID.ToUpper();
 
