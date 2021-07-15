@@ -40,7 +40,7 @@ namespace Atert_X
         private void button1_Click(object sender, EventArgs e)
         {
             var item = Inventory.getItemStackByHotbarID((int)slotID.Value); // Get item
-            item.itemAmount = (int)itemAmount.Value;
+            item.currentStackSize = (int)itemAmount.Value;
             item.itemID = ItemRegistry.getIDFromName(itemName.Text);
             Text = item.itemAddr;
         }
