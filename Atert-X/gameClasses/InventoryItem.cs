@@ -1,9 +1,9 @@
 ﻿namespace Atert_X.gameClasses
 {
-    public class UniqueItem
+    public class InventoryItem
     {
         public string slotAddr;
-        public UniqueItem(string itemID)
+        public InventoryItem(string itemID)
         {
             this.slotAddr = itemID;
         }

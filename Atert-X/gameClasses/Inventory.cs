@@ -8,6 +8,6 @@ namespace Atert_X.gameClasses
 {
     public class Inventory
     {
-        public static UniqueItem getItemStackByHotbarID(int slotID) => new UniqueItem((0x20 - 8 + (slotID * 8)).ToString("X"));
+        public static InventoryItem getItemStackByHotbarID(int slotID) => new InventoryItem((0x20 - 8 + (slotID * 8)).ToString("X"));
     }
 }
