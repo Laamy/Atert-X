@@ -1,11 +1,17 @@
 ﻿namespace Atert_X.gameClasses
 {
-    public class ItemStack
+    public class UniqueItem
     {
         public string itemAddr;
-        public ItemStack(string itemID)
+        public UniqueItem(string itemID)
         {
             this.itemAddr = itemID;
+        }
+
+        public int itemstackID
+        {
+            get => Form1.mem.ReadInt($"{Form1.novaItemList},{itemAddr},28");
+            set => Form1.mem.WriteMemory($"{Form1.novaItemList},{itemAddr},28", "int", value.ToString());
         }
 
         public int maxItemAmount

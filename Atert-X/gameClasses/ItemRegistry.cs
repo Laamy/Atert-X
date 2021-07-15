@@ -11,11 +11,12 @@ namespace Atert_X.gameClasses
         public static int getIDFromName(string itemID)
         {
             string upperID = itemID.ToUpper();
+
             if (upperID == "BEHEMUTTIUM") return 0;
             if (upperID == "COLLECTOR BOT") return 1;
             if (upperID == "IRON ORE") return 2;
             if (upperID == "MEDKIT") return 3;
-            // No ID 4 Oof
+
             if (upperID == "STONE") return 5;
             if (upperID == "TWIG") return 6;
             if (upperID == "WATER BALL") return 7;
