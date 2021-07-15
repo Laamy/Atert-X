@@ -8,6 +8,16 @@
             this.slotAddr = itemID;
         }
 
+        public bool isNull // SAFTY!
+        {
+            get
+            {
+                if (maxStackSize != 0 || currentStackSize != 0 || itemID != 0)
+                    return false;
+                return true;
+            }
+        }
+
         // -- : Item struct : --
         // m_CachedPtr
         // itemIcon
